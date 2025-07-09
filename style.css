@@ -1,0 +1,161 @@
+/* 全体の基本設定 */
+body {
+    font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+    margin: 0;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+
+  }
+  
+  /* ヘッダー全体 */
+  header {
+    padding: 10px 20px;
+
+  }
+  
+  /* ヘッダー内部（ロゴとナビ横並び） */
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+  }
+  
+  /* ロゴのスタイル */
+  .logo {
+    height: 200px;
+    width: auto;
+    max-width: 100%;
+  }
+  
+  /* ナビゲーションリスト */
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ナビゲーションリンク */
+  .nav-list li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-list li a:hover {
+    background-color: #fff;
+    border-radius: 4px;
+  }
+ 
+  
+  /* セクション全体 */
+  .section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fffefb;
+    border-bottom: 1px solid #333;
+  }
+ 
+  .section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  /* リスト（⚫️付きの内容） */
+  ul.list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  /* プロフィール画像 */
+  .profile {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  /* 経歴画像 */
+  .keireki {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  /* QRコード画像 */
+  .qr {
+    width: 150px;
+    margin-top: 20px;
+  }
+  .link a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .insta-button {
+    display: inline-block;
+    background-color: #E1306C; /* インスタカラー */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .insta-button:hover {
+    background-color: #c2185b;
+  }
+  
+  
+  /* フッター */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+  }
+  
+  /* モバイル対応 */
+  @media screen and (max-width: 600px) {
+    header {
+        position: static;
+    }
+    .main-header {
+      flex-direction: column;
+      align-items: flex-start;
+
+    }
+  
+    .nav-list {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .logo {
+      height: 50px;
+      margin-bottom: 10px;
+    }
+  
+    .profile,
+    .keireki {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  
+  
